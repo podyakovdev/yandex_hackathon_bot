@@ -1,0 +1,717 @@
+[
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "Survey",
+        "importPath": "survey.models",
+        "description": "survey.models",
+        "isExtraImport": true,
+        "detail": "survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "survey.models",
+        "description": "survey.models",
+        "isExtraImport": true,
+        "detail": "survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "survey.models",
+        "description": "survey.models",
+        "isExtraImport": true,
+        "detail": "survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "SurveySerializer",
+        "importPath": "survey.serializers",
+        "description": "survey.serializers",
+        "isExtraImport": true,
+        "detail": "survey.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionSerializer",
+        "importPath": "survey.serializers",
+        "description": "survey.serializers",
+        "isExtraImport": true,
+        "detail": "survey.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ResponseSerializer",
+        "importPath": "survey.serializers",
+        "description": "survey.serializers",
+        "isExtraImport": true,
+        "detail": "survey.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "httpx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "httpx",
+        "description": "httpx",
+        "detail": "httpx",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ApiConfig",
+        "kind": 6,
+        "importPath": "backend.api.apps",
+        "description": "backend.api.apps",
+        "peekOfCode": "class ApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'api'",
+        "detail": "backend.api.apps",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.api.urls",
+        "description": "backend.api.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'surveys', SurveyViewSet)\nrouter.register(r'questions', QuestionViewSet)\nrouter.register(r'responses', ResponseViewSet)\nurlpatterns = router.urls",
+        "detail": "backend.api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.api.urls",
+        "description": "backend.api.urls",
+        "peekOfCode": "urlpatterns = router.urls",
+        "detail": "backend.api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "SurveyViewSet",
+        "kind": 6,
+        "importPath": "backend.api.views",
+        "description": "backend.api.views",
+        "peekOfCode": "class SurveyViewSet(ModelViewSet):\n    queryset = Survey.objects.all()\n    serializer_class = SurveySerializer\nclass QuestionViewSet(ModelViewSet):\n    queryset = Question.objects.all()\n    serializer_class = QuestionSerializer\nclass ResponseViewSet(ModelViewSet):\n    queryset = Response.objects.all()\n    serializer_class = ResponseSerializer",
+        "detail": "backend.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionViewSet",
+        "kind": 6,
+        "importPath": "backend.api.views",
+        "description": "backend.api.views",
+        "peekOfCode": "class QuestionViewSet(ModelViewSet):\n    queryset = Question.objects.all()\n    serializer_class = QuestionSerializer\nclass ResponseViewSet(ModelViewSet):\n    queryset = Response.objects.all()\n    serializer_class = ResponseSerializer",
+        "detail": "backend.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "ResponseViewSet",
+        "kind": 6,
+        "importPath": "backend.api.views",
+        "description": "backend.api.views",
+        "peekOfCode": "class ResponseViewSet(ModelViewSet):\n    queryset = Response.objects.all()\n    serializer_class = ResponseSerializer",
+        "detail": "backend.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend.core.asgi",
+        "description": "backend.core.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "backend.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-(*&fqc5nuq6$q(vs)b37y+b_3o^=1z(wda-5w^#q(5w^%0dl@q'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-(*&fqc5nuq6$q(vs)b37y+b_3o^=1z(wda-5w^#q(5w^%0dl@q'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'survey',\n    'forms_gateway'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'core.urls'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "ROOT_URLCONF = 'core.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'core.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nREST_FRAMEWORK = {",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nREST_FRAMEWORK = {\n    'DEFAULT_RENDERER_CLASSES': ['rest_framework.renderers.JSONRenderer'],\n    'DEFAULT_PARSER_CLASSES': ['rest_framework.parsers.JSONParser'],\n}",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_RENDERER_CLASSES': ['rest_framework.renderers.JSONRenderer'],\n    'DEFAULT_PARSER_CLASSES': ['rest_framework.parsers.JSONParser'],\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = ((BASE_DIR / 'static/'),)\nAUTH_USER_MODEL = 'survey.CustomUser'\n# Default primary key field type",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = ((BASE_DIR / 'static/'),)\nAUTH_USER_MODEL = 'survey.CustomUser'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = ((BASE_DIR / 'static/'),)\nAUTH_USER_MODEL = 'survey.CustomUser'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = ((BASE_DIR / 'static/'),)\nAUTH_USER_MODEL = 'survey.CustomUser'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = ((BASE_DIR / 'static/'),)\nAUTH_USER_MODEL = 'survey.CustomUser'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "STATICFILES_DIRS = ((BASE_DIR / 'static/'),)\nAUTH_USER_MODEL = 'survey.CustomUser'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'survey.CustomUser'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.core.urls",
+        "description": "backend.core.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "detail": "backend.core.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend.core.wsgi",
+        "description": "backend.core.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "backend.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "FormsGatewayConfig",
+        "kind": 6,
+        "importPath": "backend.forms_gateway.apps",
+        "description": "backend.forms_gateway.apps",
+        "peekOfCode": "class FormsGatewayConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'forms_gateway'",
+        "detail": "backend.forms_gateway.apps",
+        "documentation": {}
+    },
+    {
+        "label": "YANDEX_FORM_API",
+        "kind": 5,
+        "importPath": "backend.forms_gateway.client",
+        "description": "backend.forms_gateway.client",
+        "peekOfCode": "YANDEX_FORM_API = \"https://forms.yandex.ru/api/v1/submit\"\nYANDEX_TTS_URL = \"https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize\"\nYANDEX_STT_URL = \"https://stt.api.cloud.yandex.net/speech/v1/stt:recognize\"\nasync def send_to_yandex(form_id: str, payload: dict) -> bool:\n    \"Преобразует текст в речь\"\n    async with httpx.AsyncClient() as client:\n        response = await client.post(f\"{YANDEX_FORM_API}/{form_id}\", json=payload)\n        return response.status_code == 200\nasync def synthesize(text: str, token: str) -> bytes:\n    \"Распознает речь в тексте\"",
+        "detail": "backend.forms_gateway.client",
+        "documentation": {}
+    },
+    {
+        "label": "YANDEX_TTS_URL",
+        "kind": 5,
+        "importPath": "backend.forms_gateway.client",
+        "description": "backend.forms_gateway.client",
+        "peekOfCode": "YANDEX_TTS_URL = \"https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize\"\nYANDEX_STT_URL = \"https://stt.api.cloud.yandex.net/speech/v1/stt:recognize\"\nasync def send_to_yandex(form_id: str, payload: dict) -> bool:\n    \"Преобразует текст в речь\"\n    async with httpx.AsyncClient() as client:\n        response = await client.post(f\"{YANDEX_FORM_API}/{form_id}\", json=payload)\n        return response.status_code == 200\nasync def synthesize(text: str, token: str) -> bytes:\n    \"Распознает речь в тексте\"\n    headers = {\"Authorization\": f\"Bearer {token}\"}",
+        "detail": "backend.forms_gateway.client",
+        "documentation": {}
+    },
+    {
+        "label": "YANDEX_STT_URL",
+        "kind": 5,
+        "importPath": "backend.forms_gateway.client",
+        "description": "backend.forms_gateway.client",
+        "peekOfCode": "YANDEX_STT_URL = \"https://stt.api.cloud.yandex.net/speech/v1/stt:recognize\"\nasync def send_to_yandex(form_id: str, payload: dict) -> bool:\n    \"Преобразует текст в речь\"\n    async with httpx.AsyncClient() as client:\n        response = await client.post(f\"{YANDEX_FORM_API}/{form_id}\", json=payload)\n        return response.status_code == 200\nasync def synthesize(text: str, token: str) -> bytes:\n    \"Распознает речь в тексте\"\n    headers = {\"Authorization\": f\"Bearer {token}\"}\n    data = {",
+        "detail": "backend.forms_gateway.client",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.survey.migrations.0001_initial",
+        "description": "backend.survey.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Survey',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "backend.survey.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserAdmin",
+        "kind": 6,
+        "importPath": "backend.survey.admin",
+        "description": "backend.survey.admin",
+        "peekOfCode": "class CustomUserAdmin(UserAdmin):\n    fieldsets = UserAdmin.fieldsets + (\n        (\"Дополнительные поля\", {\"fields\": (\"phone_number\",)}),\n    )\nadmin.site.register(CustomUser, CustomUserAdmin)",
+        "detail": "backend.survey.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SurveyConfig",
+        "kind": 6,
+        "importPath": "backend.survey.apps",
+        "description": "backend.survey.apps",
+        "peekOfCode": "class SurveyConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'survey'",
+        "detail": "backend.survey.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "kind": 6,
+        "importPath": "backend.survey.models",
+        "description": "backend.survey.models",
+        "peekOfCode": "class CustomUser(AbstractUser):\n    phone_number = models.CharField(\n        max_length=20,\n        blank=True,\n        verbose_name=\"Сотовый телефон\"\n    )\n    def __str__(self):\n        return self.username\nfrom django.db import models\nclass Survey(models.Model):",
+        "detail": "backend.survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "Survey",
+        "kind": 6,
+        "importPath": "backend.survey.models",
+        "description": "backend.survey.models",
+        "peekOfCode": "class Survey(models.Model):\n    \"\"\"\n    Модель опроса, содержащая заголовок и описание.\n    \"\"\"\n    title = models.CharField(max_length=255, help_text=\"Название опроса\")\n    description = models.TextField(blank=True, help_text=\"Описание опроса\")\n    def __str__(self):\n        return self.title\nclass Question(models.Model):\n    \"\"\"",
+        "detail": "backend.survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "kind": 6,
+        "importPath": "backend.survey.models",
+        "description": "backend.survey.models",
+        "peekOfCode": "class Question(models.Model):\n    \"\"\"\n    Вопрос, связанный с конкретным опросом.\n    Может быть закрытым, открытым или с подсказками.\n    \"\"\"\n    survey = models.ForeignKey(Survey, on_delete=models.CASCADE, related_name='questions')\n    text = models.TextField(help_text=\"Текст вопроса\")\n    type = models.CharField(\n        max_length=20,\n        choices=[",
+        "detail": "backend.survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "Option",
+        "kind": 6,
+        "importPath": "backend.survey.models",
+        "description": "backend.survey.models",
+        "peekOfCode": "class Option(models.Model):\n    \"\"\"\n    Вариант ответа для закрытого вопроса.\n    \"\"\"\n    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='options')\n    text = models.CharField(max_length=255, help_text=\"Текст варианта ответа\")\n    def __str__(self):\n        return self.text\nclass Response(models.Model):\n    \"\"\"",
+        "detail": "backend.survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "kind": 6,
+        "importPath": "backend.survey.models",
+        "description": "backend.survey.models",
+        "peekOfCode": "class Response(models.Model):\n    \"\"\"\n    Ответ пользователя на опрос.\n    Хранит дату и информацию, был ли опрос пройден через бота.\n    \"\"\"\n    survey = models.ForeignKey(Survey, on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    filled_by_bot = models.BooleanField(default=False, help_text=\"Заполнено через чат-бот\")\n    def __str__(self):\n        return f\"Response #{self.id} to {self.survey.title}\"",
+        "detail": "backend.survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
+        "kind": 6,
+        "importPath": "backend.survey.models",
+        "description": "backend.survey.models",
+        "peekOfCode": "class Answer(models.Model):\n    \"\"\"\n    Ответ на конкретный вопрос в рамках одного Response.\n    \"\"\"\n    response = models.ForeignKey(Response, on_delete=models.CASCADE, related_name='answers')\n    question = models.ForeignKey(Question, on_delete=models.CASCADE)\n    text = models.TextField(help_text=\"Ответ пользователя\")\n    def __str__(self):\n        return",
+        "detail": "backend.survey.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "backend.survey.serializers",
+        "description": "backend.survey.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CustomUser\n        fields = ['id', 'username', 'email', 'phone_number']",
+        "detail": "backend.survey.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.manage",
+        "description": "backend.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "backend.manage",
+        "documentation": {}
+    }
+]
