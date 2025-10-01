@@ -7,7 +7,7 @@ class User(models.Model):
         ('F', 'Женский'),
         ('O', 'Другой'),
     ]
-    
+
     tg_nickname = models.CharField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
     surname = models.CharField(max_length=255)
@@ -40,8 +40,13 @@ class Survey(models.Model):
 
 class SurveyResponse(models.Model):
     """Ответы пользователя на конкретный опрос."""
-    survey = models.ForeignKey(Survey, on_delete=models.CASCADE, related_name="responses")
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="responses", null=True, blank=True)
+    survey = models.ForeignKey(
+        Survey, on_delete=models.CASCADE, related_name="responses"
+    )
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="responses", 
+        null=True, blank=True
+    )
     # Произвольные ответы в виде списка строк (по порядку вопросов)
     answers = models.JSONField(default=list)
 

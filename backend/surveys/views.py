@@ -1,20 +1,20 @@
-import os
 import asyncio
+import os
 
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework import status, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from django.views.decorators.csrf import csrf_exempt
-from django.utils.decorators import method_decorator
 
-from .models import User, Survey, SurveyResponse
+from .models import Survey, SurveyResponse, User
 from .serializers import (
+    SurveyImportResultSerializer,
+    SurveyImportSerializer,
+    SurveyResponseResultSerializer,
+    SurveyResponseSerializer,
     UserRegistrationSerializer,
     UserSerializer,
-    SurveyImportSerializer,
-    SurveyImportResultSerializer,
-    SurveyResponseSerializer,
-    SurveyResponseResultSerializer,
 )
 
 
@@ -32,7 +32,7 @@ class UserViewSet(viewsets.ViewSet):
         """
         serializer = UserRegistrationSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        
+
         try:
             user = serializer.save()
             return Response(
@@ -45,7 +45,11 @@ class UserViewSet(viewsets.ViewSet):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-    @action(detail=False, methods=["get"], url_path="by-nickname/(?P<nickname>[^/.]+)")
+    @action(
+        detail=False, 
+        methods=["get"], 
+        url_path="by-nickname/(?P<nickname>[^/.]+)"
+    )
     def get_by_nickname(self, request, nickname=None):
         """
         GET /api/users/by-nickname/<nickname>
@@ -71,8 +75,8 @@ class SurveyViewSet(viewsets.ViewSet):
     def import_survey(self, request):
         """
         POST /api/surveys/import
-        Принимает external_id (id формы в Яндекс), опционально метаданные и список вопросов,
-        сохраняет в БД и возвращает номер опроса (id).
+        Принимает external_id (id формы в Яндекс), опционально метаданные 
+        и список вопросов, сохраняет в БД и возвращает номер опроса (id).
         """
         serializer = SurveyImportSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -106,7 +110,10 @@ class SurveyViewSet(viewsets.ViewSet):
 
         if not survey_data:
             return Response(
-                {"detail": "Не удалось получить анкету из Яндекс Форм. Проверьте external_id и настройки API."},
+                {
+                    "detail": "Не удалось получить анкету из Яндекс Форм. "
+                    "Проверьте external_id и настройки API."
+                },
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
@@ -151,7 +158,9 @@ class SurveyViewSet(viewsets.ViewSet):
 
         if not client_id or not client_secret:
             return Response(
-                {"detail": "YANDEX_CLIENT_ID или YANDEX_CLIENT_SECRET не установлены"},
+                {
+                    "detail": "YANDEX_CLIENT_ID или YANDEX_CLIENT_SECRET не установлены"
+                },
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR,
             )
 
@@ -165,7 +174,11 @@ class SurveyViewSet(viewsets.ViewSet):
                 "client_id": client_id,
                 "client_secret": client_secret[:10] + "...",
                 "test_result": result,
-                "message": "Подключение к API работает" if result is None else "Получены данные"
+                "message": (
+                    "Подключение к API работает" 
+                    if result is None 
+                    else "Получены данные"
+                )
             })
         except Exception as e:
             return Response(
@@ -177,13 +190,17 @@ class SurveyViewSet(viewsets.ViewSet):
     def submit_answers(self, request, pk=None):
         """
         POST /api/surveys/<id>/submit
-        Принимает ответы пользователя и сохраняет их. Возвращает сохранённый объект.
+        Принимает ответы пользователя и сохраняет их. 
+        Возвращает сохранённый объект.
         Тут надо дописать отправку ответов в Яндекс Формы.
         """
         try:
             survey = Survey.objects.get(pk=pk)
         except Survey.DoesNotExist:
-            return Response({"detail": "Survey not found"}, status=status.HTTP_404_NOT_FOUND)
+            return Response(
+                {"detail": "Survey not found"}, 
+                status=status.HTTP_404_NOT_FOUND
+            )
 
         serializer = SurveyResponseSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)

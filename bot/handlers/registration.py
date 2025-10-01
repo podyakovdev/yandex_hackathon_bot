@@ -1,10 +1,10 @@
-from aiogram import Router, F
+from aiogram import F, Router
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import Message
 
-from services import get_user_by_username, create_user
+from services import create_user, get_user_by_username
 from .operations import OperationStates
 
 
@@ -51,7 +51,7 @@ async def receive_first_name(message: Message, state: FSMContext) -> None:
             "Имя не должно быть пустым. Введите имя ещё раз."
         )
         return
-    
+
     await state.update_data(first_name=text)
     await state.set_state(RegistrationStates.asking_last_name)
     await message.answer("Спасибо! Теперь введите вашу фамилию:")
@@ -65,7 +65,7 @@ async def receive_last_name(message: Message, state: FSMContext) -> None:
             "Фамилия не должна быть пустой. Введите фамилию ещё раз."
         )
         return
-    
+
     await state.update_data(last_name=text)
     await state.set_state(RegistrationStates.asking_age)
     await message.answer("Спасибо! Теперь введите ваш возраст (число):")
@@ -86,7 +86,7 @@ async def receive_age(message: Message, state: FSMContext) -> None:
             "Возраст должен быть числом. Введите возраст ещё раз."
         )
         return
-    
+
     await state.update_data(age=age)
     await state.set_state(RegistrationStates.asking_gender)
     await message.answer(
@@ -99,7 +99,7 @@ async def receive_age(message: Message, state: FSMContext) -> None:
 @registration_router.message(RegistrationStates.asking_gender, F.text.len() > 0)
 async def receive_gender(message: Message, state: FSMContext) -> None:
     text = (message.text or "").strip().upper()
-    
+
     # Принимаем как буквы, так и полные названия
     if text in ["M", "М", "МУЖСКОЙ", "МУЖ"]:
         gender = "M"
@@ -112,7 +112,7 @@ async def receive_gender(message: Message, state: FSMContext) -> None:
             "F - Женский"
         )
         return
-    
+
     from_user = message.from_user
     if from_user is None:
         await message.answer(
@@ -122,7 +122,7 @@ async def receive_gender(message: Message, state: FSMContext) -> None:
 
     # Получаем все данные регистрации
     data = await state.get_data()
-    
+
     # Регистрируем пользователя через API
     created = await create_user(
         tg_nickname=from_user.username or "",

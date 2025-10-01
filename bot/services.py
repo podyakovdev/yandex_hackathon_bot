@@ -81,7 +81,7 @@ async def create_user(tg_nickname, name, surname, age, gender):
             return resp.json()
     except Exception as e:  # noqa: BLE001
         logger.warning(
-            f"Не удалось создать пользователя в user-сервисе: {e}"
+            "Не удалось создать пользователя в user-сервисе: %s", e
         )
         return None
 
@@ -107,7 +107,7 @@ async def submit_survey_response(survey_id, user_data, answers):
             return resp.json()
     except Exception as e:  # noqa: BLE001
         logger.warning(
-            f"Не удалось отправить ответы на опрос: {e}"
+            "Не удалось отправить ответы на опрос: %s", e
         )
         return None
 

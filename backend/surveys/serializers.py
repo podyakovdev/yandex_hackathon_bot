@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import User, Survey, SurveyResponse
+from .models import Survey, SurveyResponse, User
 
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
@@ -12,7 +12,9 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'tg_nickname', 'name', 'surname', 'age', 'gender', 'created_at']
+        fields = [
+            'id', 'tg_nickname', 'name', 'surname', 'age', 'gender', 'created_at'
+        ]
 
 
 class SurveyImportSerializer(serializers.Serializer):
@@ -27,8 +29,12 @@ class SurveyImportResultSerializer(serializers.ModelSerializer):
 
 
 class SurveyResponseSerializer(serializers.Serializer):
-    answers = serializers.ListField(child=serializers.CharField(), allow_empty=False)
-    user_id = serializers.IntegerField(required=False, help_text="ID пользователя из базы")
+    answers = serializers.ListField(
+        child=serializers.CharField(), allow_empty=False
+    )
+    user_id = serializers.IntegerField(
+        required=False, help_text="ID пользователя из базы"
+    )
     telegram_user_id = serializers.CharField(required=False, allow_blank=True)
     telegram_username = serializers.CharField(required=False, allow_blank=True)
 
@@ -36,6 +42,9 @@ class SurveyResponseSerializer(serializers.Serializer):
 class SurveyResponseResultSerializer(serializers.ModelSerializer):
     class Meta:
         model = SurveyResponse
-        fields = ["id", "survey", "answers", "user", "telegram_user_id", "telegram_username", "submitted_at"]
+        fields = [
+            "id", "survey", "answers", "user", "telegram_user_id", 
+            "telegram_username", "submitted_at"
+        ]
 
 

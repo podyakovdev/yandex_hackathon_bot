@@ -1,12 +1,17 @@
+import logging
+
+import httpx
 from aiogram import F, Router
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import Message
-import logging
 
-from services import call_external_api, submit_survey_response, get_user_by_username
 from config import get_user_service_base_url
-import httpx
+from services import (
+    call_external_api,
+    get_user_by_username,
+    submit_survey_response,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -17,6 +22,7 @@ operations_router = Router()
 class OperationStates(StatesGroup):
     awaiting_number = State()
 
+
 class SurveyStates(StatesGroup):
     answering_question = State()
 
@@ -26,7 +32,7 @@ async def get_survey_from_api(survey_id: int):
     base = get_user_service_base_url()
     if not base:
         return None
-    
+
     try:
         async with httpx.AsyncClient(timeout=5.0) as client:
             # Сначала получаем список всех опросов или конкретный опрос
@@ -71,7 +77,7 @@ async def receive_number(message: Message, state: FSMContext) -> None:
             f"Анкета с номером {survey_id} не содержит вопросов."
         )
         return
-    
+
     # Сохраняем данные анкеты в состоянии
     await state.update_data({
         "survey_id": survey_id,
@@ -80,7 +86,7 @@ async def receive_number(message: Message, state: FSMContext) -> None:
         "current_question": 0,
         "answers": []
     })
-    
+
     # Начинаем опрос
     await state.set_state(SurveyStates.answering_question)
     await message.answer(
@@ -95,17 +101,17 @@ async def receive_answer(message: Message, state: FSMContext) -> None:
     if not text:
         await message.answer("Ответ не может быть пустым. Пожалуйста, ответьте на вопрос.")
         return
-    
+
     # Получаем данные анкеты из состояния
     data = await state.get_data()
     survey_id = data["survey_id"]
     questions = data["questions"]
     current_question = data["current_question"]
     answers = data["answers"]
-    
+
     # Добавляем ответ
     answers.append(text)
-    
+
     # Проверяем, есть ли ещё вопросы
     if current_question + 1 < len(questions):
         # Переходим к следующему вопросу
@@ -114,7 +120,7 @@ async def receive_answer(message: Message, state: FSMContext) -> None:
             "current_question": next_question,
             "answers": answers
         })
-        
+
         await message.answer(
             f"Вопрос {next_question + 1} из {len(questions)}:\n"
             f"{questions[next_question]}"
@@ -124,9 +130,11 @@ async def receive_answer(message: Message, state: FSMContext) -> None:
         await finish_survey(message, state, survey_id, answers)
 
 
-async def finish_survey(message: Message, state: FSMContext, survey_id: int, answers: list) -> None:
+async def finish_survey(
+    message: Message, state: FSMContext, survey_id: int, answers: list
+) -> None:
     """Завершение анкеты и отправка результатов на бекенд"""
-    
+
     from_user = message.from_user
     if not from_user:
         await message.answer("Ошибка: не удалось определить пользователя.")
@@ -145,7 +153,7 @@ async def finish_survey(message: Message, state: FSMContext, survey_id: int, ans
 
     # Отправляем ответы на бекенд через API
     result = await submit_survey_response(survey_id, user_data, answers)
-    
+
     if result:
         await message.answer(
             "✅ Анкета успешно завершена и отправлена!"
@@ -157,7 +165,7 @@ async def finish_survey(message: Message, state: FSMContext, survey_id: int, ans
             "Попробуйте позже или обратитесь к администратору.\n\n"
             "Введите номер новой анкеты или /start"
         )
-    
+
     # Возвращаемся в начальное состояние
     await state.set_state(OperationStates.awaiting_number)
 
